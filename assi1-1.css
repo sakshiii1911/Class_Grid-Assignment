@@ -1,0 +1,433 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 30px 50px;
+}
+
+
+
+.assignment1 {
+
+    width: 400px;
+    height: 400px;
+
+    margin: 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+
+    border: 2px solid black;
+}
+
+.box {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100px;
+
+    margin: 10px;
+
+    border: 2px solid black;
+
+    font-size: 25px;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: blueviolet;
+}
+
+.box3 {
+    background-color: chocolate;
+}
+
+.box4 {
+    background-color: green;
+}
+
+.box5 {
+    background-color: red;
+}
+
+.box6 {
+    background-color: yellow;
+}
+
+.box7 {
+    background-color: pink;
+}
+
+.box8 {
+    background-color: darkorange;
+}
+
+.box9 {
+    background-color: dimgray;
+}
+
+
+.blog {
+
+    width: 800px;
+
+    height: 500px;
+
+    margin: 50px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr;
+
+    grid-template-rows: 1fr 3fr 1fr;
+
+   
+
+    grid-template-areas:
+
+        "header header"
+
+        "sidebar main"
+
+        "footer footer";
+}
+
+
+.blog-header {
+
+    grid-area: header;
+
+    background-color: blue;
+
+    color: black;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.blog-sidebar {
+
+    grid-area: sidebar;
+
+    background-color: orange;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.blog-main {
+
+    grid-area: main;
+
+    background-color: lightgreen;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.blog-footer {
+
+    grid-area: footer;
+
+    background-color: purple;
+
+    color: black;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.gallery {
+
+    width: 90%;
+
+    margin: 50px;
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 15px;
+}
+
+
+.gallery-box {
+
+    height: 150px;
+
+    border: 2px solid black;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.gallery1 {
+    background-color: blue;
+}
+
+.gallery2 {
+    background-color: blueviolet;
+}
+
+.gallery3 {
+    background-color: chocolate;
+}
+
+.gallery4 {
+    background-color: green;
+}
+
+.gallery5 {
+    background-color: red;
+}
+
+.gallery6 {
+    background-color: yellow;
+}
+
+.gallery7 {
+    background-color: pink;
+}
+
+.gallery8 {
+    background-color: darkorange;
+}
+
+.dashboard {
+
+    width: 900px;
+
+    height: 500px;
+
+    margin: 50px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 3fr 1fr;
+
+    grid-template-rows: 1fr 4fr 1fr;
+
+   
+
+    grid-template-areas:
+
+        "header header header"
+
+        "navigation main aside"
+
+        "footer footer footer";
+}
+
+
+.dashboard-header {
+
+    grid-area: header;
+
+    background-color: blue;
+
+    color: black;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.navigation {
+
+    grid-area: navigation;
+
+    background-color: orange;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 22px;
+}
+
+
+.dashboard-main {
+
+    grid-area: main;
+
+    background-color: lightgreen;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.aside {
+
+    grid-area: aside;
+
+    background-color: pink;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.dashboard-footer {
+
+    grid-area: footer;
+
+    background-color: purple;
+
+    color: black;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.cards {
+
+    width: 90%;
+
+    margin: 50px;
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fill, minmax(200px, 1fr));
+
+    gap: 20px;
+}
+
+
+.card {
+
+    border: 2px solid black;
+
+    padding: 10px;
+
+    background-color: white;
+}
+
+
+.card-image {
+
+    width: 100%;
+
+    height: 150px;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 25px;
+}
+
+
+.card h2 {
+
+    margin-bottom: 10px;
+}
+
+
+.card p {
+
+    font-size: 16px;
+}
+
+
+.image1 {
+    background-color: blue;
+}
+
+.image2 {
+    background-color: orange;
+}
+
+.image3 {
+    background-color: green;
+}
+
+.image4 {
+    background-color: red;
+}
+
+.image5 {
+    background-color: purple;
+}
+
+.image6 {
+    background-color: pink;
+}
